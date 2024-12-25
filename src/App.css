@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden!important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Box-Modify {
+  border: 1px solid black;
+    margin: 35px;
+}
+.Button-Modify {
+  background-color: green;
+    font-weight: 700;
+    color: white;
+    width: 11em;
+}
+.plans_section {
+  position: absolute;
+  top: 18%;
+  word-break: break-all;
+  width: 2px;
+}
+.plans_section h6 {
+  display: block;
+  margin-bottom: 6.2rem;
+}
+.plans_section h6 span {
+  display: inline-block;
+  transform: rotate(90deg); 
+  font-weight: 700;
+
+}
+.PrintBtn-Modify {
+  background-color: grey;
+    font-weight: 700;
+    color: white;
+    width: 16em;
+}
+.InvoiceHeader-Modify {
+  background-color: green;
+  font-weight: 700;
+  color: white;
+}
+.Summary-Modify {
+  font-weight: 600;
+  color: black;
+}
+.InvoiceTD-Modify {
+  color: green;
+  font-weight: bold;
+  font-size: x-large;
+}
+.InvoiceTH-Modify
+{
+  font-weight: 700;
+  font-size: large;
+}
+.Label-Modify {
+  border: 1px solid black;
+    background-color: green;
+    font-weight: 700;
+    color: white;
+    padding: 3px 1px;
+    width: 13em;
+    border-radius: 5px;
+}
+.Multiplier-Modify {
+  color: blue;
+  font-weight: 700;
+  margin-bottom:unset!important;
+}
+.Details-Modify {
+  color: #3b3bff;
+  font-weight: 700;
+  text-align: start;
+}
+.Header_Title {
+  color: blue;
+  font-weight: 700;
+}
+.Points-Modify {
+  border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background: white !important;
+}
+.table-bordered {
+  border: 1px solid black !important;
+}
+table,th,tr,td {
+  border: 1px solid black !important;
+  padding: 10px;
+}
+.InvoiceHeader_Title{
+   background-color: green; 
+   color: #fff;
+    font-weight: 700;
+}
+
+.checkbox-container.checked {
+  background-color: green; 
+}
+.selected-health {
+  background: linear-gradient(to bottom, #b3e0ff, #4da6ff);
+}
+.selected-life {
+  background: linear-gradient(to bottom, #ccffcc, #66ff66);
+}
+.selected-accident {
+  background: linear-gradient(to bottom, #ffd699, #ffaf66);
+}
+
+
+ @media only screen and (min-width: 767px) and (max-width: 991px)  {
+  .Box-Modify {
+    margin: 28px;
+}
+      .plans_section {
+    top: 7%;
+}
+  }
