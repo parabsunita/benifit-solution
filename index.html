@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Benefits Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <h3 class="Header_Title mb-0 mt-1 text-center">Flexible Benefits Solution</h3>
+        <div class="ml-5 p-0 row">
+            <!-- Plans Section -->
+            <div class="plans_section col-md-1 ml-2" id="plans-container">
+                <!-- Plans will be dynamically generated here -->
+            </div>
+            <!-- Benefits Selection -->
+            <div class="col-md-12 col-lg-8" id="benefits-container">
+                <!-- Benefits will be dynamically generated here -->
+            </div>
+            <!-- Wallet and Checkout -->
+            <div class="col-md-12 col-lg-3 mt-4 pt-2 text-center">
+
+                <label class="Label-Modify mb-4 ">Wallet Allocation : 1400</label>
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Point</th>
+                                <th>Multiplier</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="benefits-summary">
+                            <!-- Selected benefits summary will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="Box-Modify col-11 p-0" style="margin-left: 12px;">
+                    <div class="col-12 d-flex">
+                        <div class="col-8">
+                            <p class="font-weight-bold">Wallet Amount</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">1400</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="col-8">
+                            <p class="font-weight-bold">Used</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold" id="used-cost"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="col-8">
+                            <p class="font-weight-bold">Available</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold" id="available"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="col-8">
+                            <p class="font-weight-bold">You Pay</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold" id="you-pay"></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="Button-Modify py-1 btn btn-sm btn-checkout">Checkout</button>
+            </div>
+        </div>
+        <!-- Invoice Section -->
+        
+            <div class="col-md-12 mt-5 mt-lg-3"  id="invoice-section" style="display: none;">
+                <h5 class="Summary-Modify text-center">Page 2 - Summary</h5>
+
+            <table class="table table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th class="InvoiceHeader_Title text-center" colSpan="5">
+                            Flexible Benefits Solution - Invoice
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th class="InvoiceTH-Modify">Benefit</th>
+                        <th class="InvoiceTH-Modify">Description</th>
+                        <th class="InvoiceTH-Modify">Points</th>
+                        <th class="InvoiceTH-Modify">Multiplier</th>
+                        <th class="InvoiceTH-Modify">Amount</th>
+                    </tr>
+
+                </thead>
+                <tbody id="invoice-summary">
+                    <!-- Invoice summary will be populated here -->
+                </tbody>
+            </table>
+            <div class="col-12 mt-5 text-center">
+                <button
+                  class="PrintBtn-Modify py-1 btn btn-sm"
+                  onClick={handlePrint}
+                >
+                  Print PDF
+                </button>
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
