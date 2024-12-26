@@ -17,7 +17,8 @@
   }
   .Box-Modify {
     border: 1px solid black;
-      margin: 35px;
+      margin:30px;
+      min-width: 150px;
   }
   .Button-Modify {
     background-color: green;
